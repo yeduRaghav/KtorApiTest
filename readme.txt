@@ -1,5 +1,21 @@
-Docker deploy command :
+How to Deploy to cloud :
+========================
+1. Set the required environment variables before running the script in local machine.
 
+Eg :
+export PROJECT_ID="your-google-cloud-project-id"
+export REGION="your-preferred-region"
+export IMAGE_NAME="ktor-api"
+export SERVICE_NAME="ktor-api-qa"
+export ENVIRONMENT="qa"
+
+2. Run the script.
+./deploy.sh
+
+
+
+Local Docker deploy command :
+=============================
 ./gradlew clean build
 docker build -t my-ktor-app .
 
